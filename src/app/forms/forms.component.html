@@ -1,5 +1,5 @@
 <div class="container">
-       <form #user="ngForm" (ngSubmit)="onsubmit()">
+       <form #user="ngForm" (ngSubmit)="onsubmit(user)">
            <div *ngIf="success" class="alert alert-success">Form Submitted Succesfully</div>
            <div *ngIf="errormessage" class="alert alert-danger">Server Not Found please connect to Internet</div>
            <h3>Post a job</h3>

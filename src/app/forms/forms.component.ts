@@ -18,10 +18,10 @@ export class FormsComponent implements OnInit {
    public success="";
   ngOnInit(): void {
   }
-  onsubmit()
+  onsubmit(user)
   {
     this.service.getcustomers(this.form).subscribe(data=>this.success=data,y=>this.errormessage=y.statusText);
-    
+      user.form.reset();
   }
 
 }
