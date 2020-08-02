@@ -3,7 +3,6 @@ import {FormsModule} from '@angular/forms';
 import {User} from '../User';
 import {FormService} from '../form.service'
 import {Router} from '@angular/router'
-import { relative } from 'path';
 import {ActivatedRoute} from '@angular/router'
 
 
